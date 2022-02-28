@@ -5,10 +5,12 @@ function Display(props) {
     return (
         <div id={props.id}>
             <table>
-                <tr>
-                    <th>Peak Sun Hours kWh/m^2/day</th>
-                    <td>{props.peakSunHours}</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <th>Peak Sun Hours kWh/m^2/day</th>
+                        <td>{props.peakSunHours}</td>
+                    </tr>
+                </tbody>
             </table>
             <p>*Average global horizontal irradiance per day is used for peak sun hours in this case</p>
         </div>
