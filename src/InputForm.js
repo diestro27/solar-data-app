@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { getAverageGHI } from "./utils/api";
 import "./InputForm.css";
 
-function InputForm() {
+function InputForm({ setPeakSunHours }) {
     const initialFormState = {
         address: "",
         zip: "",
@@ -21,8 +21,9 @@ function InputForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
         getAverageGHI(formData.zip)
-        .then(coordinates => {
-            console.log(coordinates);
+        .then(data => {
+            console.log(data);
+            setPeakSunHours(data.outputs.avg_ghi.annual);
         })
         .catch(error => {
             console.log(error);
@@ -31,6 +32,7 @@ function InputForm() {
 
     return (
         <form onSubmit={handleSubmit}>
+            {/* 
             <label htmlFor="address">
                 <input 
                     id="address"
@@ -41,7 +43,9 @@ function InputForm() {
                     value={formData.address}
                 />
             </label>
-            <label htmlFor="zip">
+            */}
+            <label htmlFor="zip">Zip Code
+                <br />
                 <input 
                     id="zip"
                     type="text"

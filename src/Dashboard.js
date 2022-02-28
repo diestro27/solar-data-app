@@ -1,11 +1,16 @@
-import React from "react";
+import "./Dashboard.css";
+import React, { useState } from "react";
+import Display from "./Display";
 import InputForm from "./InputForm";
 
 function Dashboard() {
+    const [peakSunHours, setPeakSunHours] = useState("");
+
     return (
         <div>
-            <h1>Weather App</h1>
-            <InputForm />
+            <h1>Solar Data App</h1>
+            <InputForm setPeakSunHours={setPeakSunHours} />
+            <Display  id="display" peakSunHours={peakSunHours} />
         </div>
     );
 }

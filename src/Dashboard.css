@@ -1,0 +1,11 @@
+h1 {
+    border-bottom: 3px solid #f7951c;
+    color: #006aa9;
+    margin-bottom: 20px;
+    padding: 2px;
+    text-align: center;
+}
+
+#display, h1 {
+    margin-top: 20px;
+}
