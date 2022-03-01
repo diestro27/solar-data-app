@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+git clone into a folder on your computer. Then enter the command npm install.
+
+Node and NPM are necessary to run the React application. 
+
+### Installing Node and NPM on Windows
+Go to the [Node.js downloads page](https://nodejs.org/en/download/) and download and install the LTS version. This will also install NPM.
+
+### Installing Node and NPM on Mac
+First install NVM. Then enter the commands nvm install --lts and nvm alias default node. Doing so will also install NPM.
+
+## Running this Application
+1. Run npm start.
+2. Open the file ExamplePage.html in a browser.
+
 ## Available Scripts
 
 In the project directory, you can run:
