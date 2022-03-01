@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Solar Data App
+This app gets the average peak sun hours per day for an entered zip code. This app showcases React and embedding a React app in an iframe element on an HTML page.
 
 ## Installation
 
@@ -46,7 +45,9 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Learn More
+## Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
