@@ -20,6 +20,8 @@ function InputForm({ setPeakSunHours, setYearlyAverage }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        const goButton = document.querySelector("#go");
+        goButton.blur();
         getSunlightYearlyAverage(formData.zip)
         .then(data => {
             const hours = data.outputs.solrad_annual.toFixed(2);
@@ -57,7 +59,7 @@ function InputForm({ setPeakSunHours, setYearlyAverage }) {
                     value={formData.zip}
                 />
             </label>
-            <button type="submit">Go</button>
+            <button id="go" type="submit" className="btn">Go</button>
         </form>
     );
 }

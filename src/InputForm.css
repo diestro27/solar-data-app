@@ -1,6 +1,15 @@
-  button {
+  .btn {
+      background-color: #006aa9;
+      border-color: #006aa9;
+      color: #fff;
       margin: 8px;
-      width: 149px;
+      width: 150px;
+  }
+  
+  .btn:hover {
+      background-color: #005180;
+      border-color: #005180;
+      color: #fff;
   }
   
   form {
@@ -15,6 +24,7 @@
   
   input {
       margin: 8px;
+      width: 150px;
   }
 
   label {
