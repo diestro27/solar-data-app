@@ -12,7 +12,7 @@ function Display(props) {
                     </tr>
                 </tbody>
             </table>
-            <p>*Average global horizontal irradiance per day is used for peak sun hours in this case</p>
+            <p>At a 25 degree tilt angle</p>
         </div>
     );
 }

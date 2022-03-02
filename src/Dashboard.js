@@ -8,7 +8,7 @@ function Dashboard() {
 
     return (
         <div>
-            <h1>Solar Data App</h1>
+            <h1>Peak Sun Hours</h1>
             <InputForm setPeakSunHours={setPeakSunHours} />
             <Display  id="display" peakSunHours={peakSunHours} />
         </div>
