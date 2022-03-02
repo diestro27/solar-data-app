@@ -45,7 +45,7 @@ function InputForm({ setPeakSunHours, setYearlyAverage }) {
                 />
             </label>
             */}
-            <label htmlFor="zip">Zip Code
+            <label htmlFor="zip">Zip Code (U.S. only)
                 <br />
                 <input 
                     id="zip"
