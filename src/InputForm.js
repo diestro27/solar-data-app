@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getAverageGHI, getSunlightYearlyAverage } from "./utils/api";
+import { getSunlightYearlyAverage } from "./utils/api";
 import "./InputForm.css";
 
 function InputForm({ setPeakSunHours, setYearlyAverage }) {
@@ -26,7 +26,6 @@ function InputForm({ setPeakSunHours, setYearlyAverage }) {
         .then(data => {
             const hours = data.outputs.solrad_annual.toFixed(2);
             setPeakSunHours(hours);
-            console.log(data);
         })
         .catch(error => {
             console.log(error);
