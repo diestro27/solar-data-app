@@ -1,14 +1,14 @@
   .btn {
-      background-color: #006aa9;
-      border-color: #006aa9;
+      background-color: #016ead;
+      border-color: #016ead;
       color: #fff;
       margin: 8px;
       width: 150px;
   }
   
   .btn:hover {
-      background-color: #005180;
-      border-color: #005180;
+      background-color: #01517f;
+      border-color: #01517f;
       color: #fff;
   }
   
